@@ -4,7 +4,7 @@
 
  Main Color   : #39CCCC
  main Font    : Poppins
- Heading Font : Raleway
+ Heading Font : Segoe UI light
 
 -----------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------
@@ -22,18 +22,22 @@
   outline: none !important;
   list-style: none;
 }
+@font-face {
+  font-family: 'Segoeuil';
+  src: url('../fonts/segoeuil.ttf');
+}
 
 body {
   color: #00000a;
   line-height: 1.3;
   font-weight: 400;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoeuil', sans-serif;
   overflow-x: hidden !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoeuil', sans-serif;
 }
 
 p {
@@ -481,6 +485,7 @@ span, a, a:hover {
 }
 .hero .mission p {
   margin-bottom: 30px;
+  font-size: 16px;
 }
 .hero .mission i {
   display: inline-block;
