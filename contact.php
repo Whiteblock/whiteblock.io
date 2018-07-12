@@ -1,38 +1,36 @@
 <?php
-
+if($_SERVER['REQUEST_METHOD'] !== 'POST'){
+    exit("<script>window.location=\"/\";");
+}
 // configure
-$from = 'Demo contact form <demo@domain.com>';
-$sendTo = 'Demo contact form <demo@domain.com>'; // Add Your Email
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'subject' => 'Subject', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
+$from = trim(filter_input(INPUT_POST,"email",FILTER_SANITIZE_EMAIL));//Validation should be done on the front end, sanitation on the backend
+$name = trim(filter_input(INPUT_POST,"name",FILTER_SANITIZE_STRING));
+$sendTo = 'hello@whiteblock.io'; 
+$subject = trim(filter_input(INPUT_POST,"subject",FILTER_SANITIZE_STRING));
+$message = trim(filter_input(INPUT_POST,"message",FILTER_SANITIZE_STRING));
+$message = wordwrap($message, 70, "\r\n");
+
+
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
 // let's do the sending
 
-try
-{
-    $emailText = "You have new message from contact form\n=============================\n";
+try{
 
-    foreach ($_POST as $key => $value) {
-
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-        }
-    }
-
-    $headers = array('Content-Type: text/plain; charset="UTF-8";',
-        'From: ' . $from,
-        'Reply-To: ' . $from,
-        'Return-Path: ' . $from,
+    
+    $headers = array('Content-Type: text/plain; charset="UTF-8"',
+        "To: ",
+        "From: ${from}",
+        "Reply-To: ${from}",
+        "Return-Path: ${from}"
     );
     
-    mail($sendTo, $subject, $emailText, implode("\n", $headers));
+    mail($sendTo, $subject, $message, implode("\r\n", $headers));//RFC 2822
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
-catch (\Exception $e)
-{
+catch (\Exception $e){
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
 
@@ -41,8 +39,13 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 
     header('Content-Type: application/json');
 
-    echo $encoded;
+    exit($encoded);
 }
-else {
-    echo $responseArray['message'];
-}
+    //echo $responseArray['message'];
+    exit("<script>
+        alert(\"Success\");
+        window.location = \"/\";
+
+
+        </script>");
+
