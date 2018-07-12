@@ -1,7 +1,7 @@
 /*
 * Whiteblock LLC
 **/
-$(function() {
+$(function () {
 
     "use strict";
 
@@ -9,31 +9,31 @@ $(function() {
 
     // scrollIt
     $.scrollIt({
-      upKey: 38,                // key code to navigate to the next section
-      downKey: 40,              // key code to navigate to the previous section
-      easing: 'swing',          // the easing function for animation
-      scrollTime: 600,          // how long (in ms) the animation takes
-      activeClass: 'active',    // class given to the active nav element
-      onPageChange: null,       // function(pageIndex) that is called when page is changed
-      topOffset: -80            // offste (in px) for fixed top navigation
+        upKey: 38,                // key code to navigate to the next section
+        downKey: 40,              // key code to navigate to the previous section
+        easing: 'swing',          // the easing function for animation
+        scrollTime: 600,          // how long (in ms) the animation takes
+        activeClass: 'active',    // class given to the active nav element
+        onPageChange: null,       // function(pageIndex) that is called when page is changed
+        topOffset: -80            // offste (in px) for fixed top navigation
     });
 
 
 
     // navbar scrolling background
-    wind.on("scroll",function () {
+    wind.on("scroll", function () {
 
         var bodyScroll = wind.scrollTop(),
             navbar = $(".navbar"),
             navbloglogo = $(".blog-nav .logo> img"),
             logo = $(".navbar .logo> img");
 
-        if(bodyScroll > 100){
+        if (bodyScroll > 100) {
 
             navbar.addClass("nav-scroll");
             logo.attr('src', 'img/whiteblock-logo-dark.png');
 
-        }else{
+        } else {
 
             navbar.removeClass("nav-scroll");
             logo.attr('src', 'img/whiteblock-logo-light.png');
@@ -50,9 +50,9 @@ $(function() {
 
     // sections background image from data background
     var pageSection = $(".bg-img, section");
-    pageSection.each(function(indx){
-        
-        if ($(this).attr("data-background")){
+    pageSection.each(function (indx) {
+
+        if ($(this).attr("data-background")) {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
@@ -62,52 +62,52 @@ $(function() {
 
     // Testimonials owlCarousel
     $('.testimonails .owl-carousel').owlCarousel({
-        items:1,
-        loop:true,
+        items: 1,
+        loop: true,
         margin: 15,
-        mouseDrag:false,
-        autoplay:true,
-        smartSpeed:500
+        mouseDrag: false,
+        autoplay: true,
+        smartSpeed: 500
     });
 
     // Team owlCarousel
     $('.team .owl-carousel').owlCarousel({
-        loop:true,
+        loop: true,
         margin: 30,
-        mouseDrag:false,
-        autoplay:true,
-        smartSpeed:500,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1
+        mouseDrag: false,
+        autoplay: true,
+        smartSpeed: 500,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
             },
-            700:{
-                items:2
+            700: {
+                items: 2
             },
-            1000:{
-                items:4
+            1000: {
+                items: 4
             }
         }
     });
 
     // Blog owlCarousel
     $('.blog .owl-carousel').owlCarousel({
-        loop:true,
+        loop: true,
         margin: 30,
-        mouseDrag:false,
-        autoplay:true,
-        smartSpeed:500,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1
+        mouseDrag: false,
+        autoplay: true,
+        smartSpeed: 500,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
             },
-            700:{
-                items:2
+            700: {
+                items: 2
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     });
@@ -127,7 +127,7 @@ $(function() {
 
 
     // Services Tabs
-    $(".tabs-icon").on("click", ".item", function(){
+    $(".tabs-icon").on("click", ".item", function () {
 
         var myID = $(this).attr("id");
 
@@ -139,7 +139,7 @@ $(function() {
 
 
     // Map Show
-    $(".info").on("click", ".icon-toggle", function(){
+    $(".info").on("click", ".icon-toggle", function () {
 
         $(".info").toggleClass("map-show");
         $(".map").toggleClass("o-hidden");
@@ -152,7 +152,7 @@ $(function() {
 
 // === window When Loading === //
 
-$(window).on("load",function (){
+$(window).on("load", function () {
 
     var wind = $(window);
 
@@ -166,16 +166,16 @@ $(window).on("load",function (){
 
     // isotope
     $('.gallery').isotope({
-      // options
-      itemSelector: '.items'
+        // options
+        itemSelector: '.items'
     });
 
     var $gallery = $('.gallery').isotope({
-      // options
+        // options
     });
 
     // filter items on button click
-    $('.filtering').on( 'click', 'span', function() {
+    $('.filtering').on('click', 'span', function () {
 
         var filterValue = $(this).attr('data-filter');
 
@@ -183,7 +183,7 @@ $(window).on("load",function (){
 
     });
 
-    $('.filtering').on( 'click', 'span', function() {
+    $('.filtering').on('click', 'span', function () {
 
         $(this).addClass('active').siblings().removeClass('active');
 
@@ -196,7 +196,7 @@ $(window).on("load",function (){
 
 
 // Slider 
-$(document).ready(function() {
+$(document).ready(function () {
 
     var owl = $('.header .owl-carousel');
 
@@ -204,23 +204,23 @@ $(document).ready(function() {
     // Slider owlCarousel
     $('.slider .owl-carousel').owlCarousel({
         items: 1,
-        loop:true,
+        loop: true,
         margin: 0,
-        autoplay:true,
-        smartSpeed:500
+        autoplay: true,
+        smartSpeed: 500
     });
 
     // Slider owlCarousel
     $('.slider-fade .owl-carousel').owlCarousel({
         items: 1,
-        loop:true,
+        loop: true,
         margin: 0,
-        autoplay:true,
-        smartSpeed:500,
+        autoplay: true,
+        smartSpeed: 500,
         animateOut: 'fadeOut'
     });
 
-    owl.on('changed.owl.carousel', function(event) {
+    owl.on('changed.owl.carousel', function (event) {
         var item = event.item.index - 2;     // Position of the current item
         $('h3').removeClass('animated fadeInLeft');
         $('h1').removeClass('animated fadeInRight');
