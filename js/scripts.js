@@ -157,8 +157,7 @@ $(window).on("load",function (){
     var wind = $(window);
 
     // Preloader
-    $(".loading").fadeOut(500);
-
+    $(".loading-logo").fadeOut(500);
 
     // stellar
     wind.stellar();
