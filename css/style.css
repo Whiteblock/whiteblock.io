@@ -1217,6 +1217,10 @@ footer p {
   .header .caption p {
     font-size: 16px;
   }
+  
+  .header .caption .blc {
+	font-size: 95px;  
+  }
 
   .serv-tabs .content .bord {
     padding-right: 0;
@@ -1261,6 +1265,10 @@ footer p {
 
   .header .caption h1{
     font-size: 30px;
+  }
+  
+  .header .caption .blc {
+	font-size: 45px;
   }
 
   .serv-tabs .tabs-icon .item div {
