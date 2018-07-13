@@ -134,6 +134,20 @@ span, a, a:hover {
 .cd-headline {
   font-size: 3rem;
   line-height: 1.2;
+
+
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: .2em 0;
+  font-size: 7.4rem;
+  font-weight: 50;
+  letter-spacing: 10px;
+  text-transform: lowercase;
+
+
+  }
 }
 
 @media only screen and (min-width: 768px) {
