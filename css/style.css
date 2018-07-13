@@ -84,6 +84,12 @@ span, a, a:hover {
   font-weight: 200;
   padding-bottom: 5px;
 }
+.platform-head {
+	margin-bottom: 0px;
+}
+.client-head {
+	margin-bottom: 40px;
+}
 
 .bg-gray {
   background: #f7f7f7;
@@ -1045,6 +1051,9 @@ span, a, a:hover {
 }
 .clients .brand:hover {
   opacity: 1;
+}
+.clients .section-head .platform-head {
+	margin-bottom: 0px;
 }
 
 /* ----------------------------------------------------------------
