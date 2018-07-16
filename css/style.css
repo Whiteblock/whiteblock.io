@@ -582,7 +582,7 @@ span, a, a:hover {
 -----------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
-     [ 08 Start services ]
+     [ Start Library ]
 -----------------------------------------------------------------*/
 .services .item {
   padding: 30px 15px;
@@ -601,11 +601,10 @@ span, a, a:hover {
   font-size: 22px;
 }
 .services .item p {
-  font-size: 18px;
+  font-size: 15px;
 }
-
 /* ----------------------------------------------------------------
-     [ End Services ]
+     [ End Library ]
 -----------------------------------------------------------------*/
 /* ----------------------------------------------------------------
      [ 09 Start Services Tabs ]
@@ -1098,7 +1097,7 @@ span, a, a:hover {
   padding: 30px;
   background: rgba(70, 70, 70, 0.3);
   border-radius: 5px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 .information .info .item:last-child {
   margin-bottom: 0;
@@ -1244,9 +1243,9 @@ footer p {
   .header .caption p {
     font-size: 16px;
   }
-  
+
   .header .caption .blc {
-	font-size: 95px;  
+	font-size: 95px;
   }
 
   .serv-tabs .content .bord {
@@ -1263,7 +1262,7 @@ footer p {
   .contact .map {
     height: 500px;
   }
-  
+
   .information .info{
     margin-bottom: 30px;
   }
@@ -1293,7 +1292,7 @@ footer p {
   .header .caption h1{
     font-size: 30px;
   }
-  
+
   .header .caption .blc {
 	font-size: 45px;
   }
@@ -1306,4 +1305,23 @@ footer p {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 414px) {
+  .header .caption h3{
+    font-size: 15px;
+  }
+
+  .header .caption h1{
+    font-size: 25px;
+  }
+
+  .header .caption .blc {
+	   font-size: 40px;
+  }
+
+  .serv-tabs .tabs .item p {
+    font-size: 20px;
+  }
+  .section-head h4 {
+    font-size: 35px;
+  }
+}
