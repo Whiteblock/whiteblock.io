@@ -158,8 +158,6 @@ span, a, a:hover {
 .cd-headline {
   font-size: 3rem;
   line-height: 1.2;
-
-
 }
 
 .cd-headline.clip span {
@@ -169,8 +167,6 @@ span, a, a:hover {
   font-weight: 50;
   letter-spacing: 10px;
   text-transform: lowercase;
-
-
   }
 }
 
@@ -320,7 +316,7 @@ span, a, a:hover {
      [ End Navbar ]
 -----------------------------------------------------------------*/
 /* ----------------------------------------------------------------
-     [ 03 Start Header ]
+     [ Start Header ]
 -----------------------------------------------------------------*/
 .header {
   min-height: 100vh;
@@ -435,6 +431,65 @@ span, a, a:hover {
   transition: all .5s;
 }
 
+.header .email-subscribe h4 {
+  font-size: 30px;
+  font-weight: 200;
+}
+.header .email-subscribe {
+  margin-top: 45px;
+}
+
+.header .email-subscribe .email-subscribe-form {
+  margin-top: 15px;
+}
+.header .email-subscribe .email-subscribe-form input[type='text'],
+.header .email-subscribe .email-subscribe-form textarea {
+  height: 38px;
+  max-height: 40px;
+  max-width: 40%;
+  width: 40%;
+  padding: 10px;
+  border: 0;
+  background: #f7f7f7;
+  border-radius: 3px;
+}
+.header .email-subscribe .email-subscribe-form button[type='submit'] {
+  background: #39CCCC;
+  border: 1px solid #39CCCC;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.header .email-subscribe .email-subscribe-form button[type='submit']:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  z-index: 1;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .email-subscribe .email-subscribe-form button[type='submit'] span {
+  position: relative;
+  z-index: 2;
+}
+.header .email-subscribe .email-subscribe-form button[type='submit']:hover:after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.header .email-subscribe .email-subscribe-form button[type='submit']:hover span {
+  color: #39CCCC;
+}
+
 .slider .arrow, .slider-fade .arrow {
   display: none !important;
 }
@@ -457,29 +512,6 @@ span, a, a:hover {
   position: absolute;
   bottom: 5vh;
   width: 100%;
-}
-
-.creative {
-  min-height: 100vh;
-}
-.creative .svg {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-}
-.creative .svg svg {
-  fill: #fff;
-  width: 101%;
-}
-
-.bg-vid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 #particles-js {
@@ -1303,6 +1335,9 @@ footer p {
   .serv-tabs .tabs-icon .item h6 {
     display: none;
   }
+  .header .email-subscribe h4 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -1318,10 +1353,14 @@ footer p {
 	   font-size: 40px;
   }
 
+  .header .email-subscribe h4 {
+    font-size: 20px;
+  }
+
   .serv-tabs .tabs .item p {
     font-size: 20px;
   }
   .section-head h4 {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
