@@ -454,8 +454,8 @@ span, a, a:hover {
   border-radius: 3px;
 }
 .header .email-subscribe .email-subscribe-form input[type='submit'] {
-  background: #39CCCC;
-  border: 1px solid #39CCCC;
+  background: #FB9902;
+  border: 1px solid #FB9902;
   border-radius: 3px;
   color: #fff;
   padding: 10px 30px;
@@ -786,6 +786,8 @@ span, a, a:hover {
   -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
           box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
   border-radius: 5px;
+  height: 320px;
+  margin-bottom: 35px;
 }
 .blog .item .post-img {
   position: relative;
@@ -798,6 +800,7 @@ span, a, a:hover {
 .blog .item .post-img img {
   -webkit-transition: all .5s;
   transition: all .5s;
+  height: 170px;
 }
 .blog .item .post-img .date {
   display: inline-block;
@@ -814,19 +817,73 @@ span, a, a:hover {
   font-weight: 700;
   font-size: 12px;
 }
+.blog .item .logo-img {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  height: 190px;
+  width: 40%;
+}
 .blog .item .content {
-  padding: 40px 5px;
+  padding: 30px 5px;
   background: #fff;
 }
 .blog .item .content .tag {
   color: #39CCCC;
   font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 17px;
+  margin: 0 0 10px 10px;
 }
 .blog .item .content h5 {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin: 0 10px 10px 10px;
+}
+.blog .item .content .butn {
+  padding: 10px 30px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 0px 2px 0;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.blog .item .content .butn:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  z-index: 1;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.blog .item .content .butn:hover {
+  border-color: #fff;
+}
+.blog .item .content .butn:hover:after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.blog .item .content .butn:hover span {
+  color: #1c1c1c;
+}
+.blog .item .content .butn span {
+  position: relative;
+  z-index: 2;
+}
+.blog .item .content .butn-bg {
+  background: #FB9902;
+  border-color: #FB9902;
 }
 
 .blog-nav {
