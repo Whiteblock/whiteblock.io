@@ -51,7 +51,7 @@ $(function() {
     // sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function(indx){
-        
+
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
@@ -194,7 +194,7 @@ $(window).on("load",function (){
 });
 
 
-// Slider 
+// Slider
 $(document).ready(function() {
 
     var owl = $('.header .owl-carousel');

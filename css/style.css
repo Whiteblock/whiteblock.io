@@ -134,7 +134,7 @@ span, a, a:hover {
 }
 
 .section-padding {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .valign {
@@ -576,41 +576,12 @@ span, a, a:hover {
 .hero .use p {
   font-size: 17px;
 }
+.hero .use .item  {
+  height: 270px;
+}
 
 /* ----------------------------------------------------------------
      [ End Hero ]
------------------------------------------------------------------*/
-/* ----------------------------------------------------------------
-     [ 05 Start Quote ]
------------------------------------------------------------------*/
-.quote {
-  background-attachment: fixed;
-}
-.quote p .icon {
-  font-size: 30px;
-  margin: 0 15px;
-  padding: 0;
-  opacity: .3;
-  line-height: 1;
-}
-.quote p {
-  font-size: 17px;
-  font-style: italic;
-}
-.quote h5 {
-  color: #39CCCC;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  margin: 15px 0 10px;
-}
-.quote h6 {
-  font-size: 12px;
-  color: #ccc;
-}
-
-/* ----------------------------------------------------------------
-     [ End Quote ]
 -----------------------------------------------------------------*/
 
 /* ----------------------------------------------------------------
@@ -621,16 +592,17 @@ span, a, a:hover {
   -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
           box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
   border-radius: 5px;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
+  height: 350px;
 }
 .services .item .icon {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 15px;
   color: #39CCCC;
 }
 .services .item h6 {
   margin-bottom: 15px;
-  font-size: 22px;
+  font-size: 20px;
 }
 .services .item p {
   font-size: 15px;
@@ -819,10 +791,8 @@ span, a, a:hover {
 }
 .blog .item .logo-img {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding-top: 35px;
-  height: 190px;
   width: 40%;
 }
 .blog .item .content {
@@ -1347,7 +1317,10 @@ footer p {
   .serv-tabs .content .spcial {
     padding-left: 0;
   }
-
+  .services .item {
+    margin-bottom: 30px;
+    height: 300px;
+  }
   .contact .map {
     height: 500px;
   }
@@ -1392,8 +1365,15 @@ footer p {
   .serv-tabs .tabs-icon .item h6 {
     display: none;
   }
+  .serv-tabs .tabs .item p {
+    font-size: 20px;
+  }
   .header .email-subscribe h4 {
     font-size: 20px;
+  }
+  .services .item {
+    margin-bottom: 30px;
+    height: 320px;
   }
 }
 
@@ -1415,9 +1395,48 @@ footer p {
   }
 
   .serv-tabs .tabs .item p {
-    font-size: 20px;
+    font-size: 15px;
   }
+
   .section-head h4 {
     font-size: 20px;
   }
+  .services .item {
+    height: 270px;
+  }
+
+  .blog .item {
+    border-radius: 5px;
+    height: 240px;
+    margin-bottom: 35px;
+  }
+  .blog .item .post-img img {
+    height: 100px;
+  }
+  .blog .item .content .tag {
+    font-size: 11px;
+  }
+  .blog .item .content h5 {
+    font-size: 13px;
+  }
+  .blog .item .content .butn {
+    font-size: 10px;
+  }
+  .testimonails p {
+    font-size: 15px;
+  }
+  .testimonails h5 {
+    font-size: 15px;
+  }
+  .testimonails h6 {
+    font-size: 13px;
+  }
+
+  .services .item h6 {
+    font-size: 15px;
+  }
+  .services .item p {
+    font-size: 10px;
+  }
+
 }
