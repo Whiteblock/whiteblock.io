@@ -312,6 +312,41 @@ span, a, a:hover {
   width: 100px;
 }
 
+.navbar .navbar-nav .work-btn button[type='button']{
+  background: #39CCCC;
+  border: 1px solid #39CCCC;
+  color: #fff;
+  padding: 5px 5px;
+  margin-top: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+.navbar .navbar-nav .work-btn button[type='button']:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  z-index: 1;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-nav .work-btn button[type='button'] span {
+  position: relative;
+  z-index: 2;
+}
+.navbar .navbar-nav .work-btn button[type='button']:hover:after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.navbar .navbar-nav .work-btn button[type='button']:hover span {
+  color: #39CCCC;
+}
 /* ----------------------------------------------------------------
      [ End Navbar ]
 -----------------------------------------------------------------*/
