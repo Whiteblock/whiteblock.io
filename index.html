@@ -97,15 +97,69 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-scroll-nav="5">Team</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
-                    </li>
+										<!-- Button to Open the Modal -->
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+											Work With Us
+										</button>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- End Navbar ====
     	======================================= -->
+
+		<!-- Contact form Popup ====
+    	======================================= -->
+		<section class="contact">
+			<div class="container-fluid">
+      	<div class="row">
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content contact-form">
+
+								<div class="section-head modal-header">
+									<h4 class="modal-title">Work With Us</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+
+								<div class="modal-body">
+									<div class="col-12">
+	                    <div class="form-group">
+	                        <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+	                    </div>
+	                </div>
+	                <div class="col-12">
+	                    <div class="form-group">
+	                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+	                    </div>
+	                </div>
+	                <div class="col-md-12">
+	                    <div class="form-group">
+	                        <input id="form_subject" type="text" name="_subject" placeholder="Subject">
+	                    </div>
+	                </div>
+	                <div class="col-md-12">
+	                    <div class="form-group">
+	                        <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+	                    </div>
+	                </div>
+								</div>
+
+								<div class="modal-footer">
+									<div class="col-md-12 text-center">
+                      <button type="submit"data-dismiss="modal"><span>Send Message</span></button>
+                  </div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact form Popup ====
+		======================================= -->
 
 
     <!-- =====================================
@@ -139,6 +193,7 @@
 								</div>
 								<!--End mc_embed_signup-->
 						</div>
+
         </div>
 
         <div class="arrow">
@@ -150,7 +205,31 @@
 
     <!-- End Header ====
     	======================================= -->
+			<!-- Button to Open the Modal
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Open modal
+			</button>
 
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+
+						<div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+
+						<div class="modal-body">
+							Modal body..
+						</div>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
 
     <!-- =====================================
     	==== Start Hero -->
