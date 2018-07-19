@@ -362,6 +362,7 @@ span, a, a:hover {
 }
 .header .caption h3 {
   font-weight: 200;
+  font-size: 30px;
   letter-spacing: 3px;
   -webkit-animation-delay: .2s;
           animation-delay: .2s;
@@ -467,37 +468,43 @@ span, a, a:hover {
 }
 
 .header .email-subscribe h4 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 200;
 }
 .header .email-subscribe {
-  margin-top: 45px;
+  padding: 20px 180px 0px 130px;
 }
-
-.header .email-subscribe .email-subscribe-form {
-  margin-top: 15px;
+@media only screen and (min-width: 1200px) {
+  .header .email-subscribe {
+    padding: 20px 240px 0px 220px;
+  }
 }
 .header .email-subscribe .email-subscribe-form input[type='email'],
 .header .email-subscribe .email-subscribe-form textarea {
-  height: 38px;
-  max-height: 40px;
-  max-width: 40%;
-  width: 40%;
+  width: 100%;
   padding: 10px;
   border: 0;
   background: #f7f7f7;
   border-radius: 3px;
+  margin-top: 7px;
+  margin-right: -25px;
+}
+.header .email-subscribe .email-subscribe-form textarea {
+  height: 155px;
+  max-height: 155px;
+  max-width: 100%;
 }
 .header .email-subscribe .email-subscribe-form input[type='submit'] {
-  background: #FB9902;
-  border: 1px solid #FB9902;
+  background: #F65620;
+  border: 1px solid #F65620;
   border-radius: 3px;
   color: #fff;
-  padding: 10px 30px;
-  margin-top: 10px;
-  font-weight: 500;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 15px;
   cursor: pointer;
   position: relative;
+  margin-top: 4px;
 }
 .header .email-subscribe .email-subscribe-form input[type='submit']:after {
   content: '';
@@ -1328,6 +1335,9 @@ footer p {
   .header .caption h2 {
     font-size: 30px;
   }
+  .header .caption h3 {
+    font-size: 25px;
+  }
   .header .caption h1 {
     font-size: 50px;
   }
@@ -1336,7 +1346,13 @@ footer p {
   }
 
   .header .caption .blc {
-	font-size: 95px;
+	   font-size: 85px;
+  }
+  .header .email-subscribe {
+    padding: 10px 100px 0px 70px;
+  }
+  .header .email-subscribe h4 {
+    font-size: 20px;
   }
 
   .serv-tabs .content .bord {
@@ -1388,7 +1404,11 @@ footer p {
   }
 
   .header .caption .blc {
-	font-size: 45px;
+	font-size: 55px;
+  }
+
+  .header .email-subscribe h4 {
+    font-size: 15px;
   }
 
   .serv-tabs .tabs-icon .item div {
@@ -1411,7 +1431,7 @@ footer p {
 
 @media screen and (max-width: 414px) {
   .header .caption h3{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .header .caption h1{
@@ -1419,11 +1439,14 @@ footer p {
   }
 
   .header .caption .blc {
-	   font-size: 40px;
+	   font-size: 45px;
   }
 
+  .header .email-subscribe {
+    padding: 10px 50px 0px 40px;
+  }
   .header .email-subscribe h4 {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .serv-tabs .tabs .item p {
