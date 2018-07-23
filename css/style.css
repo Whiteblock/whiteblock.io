@@ -678,7 +678,7 @@ span, a, a:hover {
   top: 0;
   opacity: .7;
 }
-.serv-tabs .content .spcial {
+.serv-tabs .content .special {
   padding-left: 30px;
 }
 .serv-tabs .content p {
@@ -1362,9 +1362,6 @@ footer p {
   .serv-tabs .content .bord:after {
     display: none;
   }
-  .serv-tabs .content .spcial {
-    padding-left: 0;
-  }
   .services .item {
     margin-bottom: 30px;
     height: 300px;
@@ -1420,6 +1417,9 @@ footer p {
   .serv-tabs .tabs .item p {
     font-size: 20px;
   }
+  .serv-tabs .content .special {
+    padding-left: 20px;
+  }
   .header .email-subscribe h4 {
     font-size: 20px;
   }
@@ -1448,11 +1448,17 @@ footer p {
   .header .email-subscribe h4 {
     font-size: 13px;
   }
-
+  .serv-tabs .content .special {
+    display: none;
+  }
   .serv-tabs .tabs .item p {
     font-size: 15px;
   }
-
+  .serv-tabs .tabs-icon .item div {
+    padding: 20px 0;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
   .section-head h4 {
     font-size: 20px;
   }
