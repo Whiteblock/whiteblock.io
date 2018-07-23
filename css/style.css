@@ -629,7 +629,7 @@ span, a, a:hover {
 /* ----------------------------------------------------------------
      [ Start Library ]
 -----------------------------------------------------------------*/
-.services .item {
+.library .item {
   padding: 30px 15px;
   -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
           box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
@@ -637,16 +637,16 @@ span, a, a:hover {
   padding-bottom: 20px;
   height: 350px;
 }
-.services .item .icon {
+.library .item .icon {
   font-size: 24px;
   margin-bottom: 15px;
   color: #39CCCC;
 }
-.services .item h6 {
+.library .item h6 {
   margin-bottom: 15px;
   font-size: 20px;
 }
-.services .item p {
+.library .item p {
   font-size: 15px;
 }
 /* ----------------------------------------------------------------
@@ -1362,7 +1362,7 @@ footer p {
   .serv-tabs .content .bord:after {
     display: none;
   }
-  .services .item {
+  .library .item {
     margin-bottom: 30px;
     height: 300px;
   }
@@ -1423,10 +1423,17 @@ footer p {
   .header .email-subscribe h4 {
     font-size: 20px;
   }
-  .services .item {
+  .library .item {
     margin-bottom: 30px;
     height: 320px;
   }
+  .library .item h6 {
+    font-size: 20px;
+  }
+  .library .item p {
+    font-size: 13px;
+  }
+
 }
 
 @media screen and (max-width: 414px) {
@@ -1460,10 +1467,16 @@ footer p {
     border-radius: 5px;
   }
   .section-head h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
-  .services .item {
-    height: 270px;
+  .library .item {
+    height: 280px;
+  }
+  .library .item h6 {
+    font-size: 13px;
+  }
+  .library .item p {
+    font-size: 10px;
   }
 
   .blog .item {
@@ -1491,13 +1504,6 @@ footer p {
   }
   .testimonails h6 {
     font-size: 13px;
-  }
-
-  .services .item h6 {
-    font-size: 15px;
-  }
-  .services .item p {
-    font-size: 10px;
   }
 
 }

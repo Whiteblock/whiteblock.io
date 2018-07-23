@@ -67,7 +67,7 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="logo" href="#">
+            <a class="logo" href="#" data-scroll-nav="0">
                 <img src="img/whiteblock-logo-light.png" alt="whiteblock blockchain testing logo">
             </a>
 
@@ -80,22 +80,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
+                        <a class="nav-link" href="#hero" data-scroll-nav="1">Overview</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#overview" data-scroll-nav="1">Overview</a>
+                        <a class="nav-link" href="#serv-tabs" data-scroll-nav="2">Solutions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#overview" data-scroll-nav="2">Solutions</a>
+                        <a class="nav-link" href="#library" data-scroll-nav="3">Library</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-scroll-nav="3">Library</a>
+                        <a class="nav-link" href="#blog" data-scroll-nav="4">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-scroll-nav="4">Blog</a>
+                        <a class="nav-link" href="#team" data-scroll-nav="5">Team</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-scroll-nav="5">Team</a>
+										<li class="nav-item">
+                        <a class="nav-link" href="#contact" data-scroll-nav="6">Contact</a>
                     </li>
 										<!-- Button to Open the Modal -->
 										<div class="work-btn">
@@ -135,11 +135,6 @@
 			                <div class="col-12">
 			                    <div class="form-group">
 			                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
-			                    </div>
-			                </div>
-			                <div class="col-md-12">
-			                    <div class="form-group">
-			                        <input id="form_subject" type="text" name="_subject" placeholder="Subject">
 			                    </div>
 			                </div>
 			                <div class="col-md-12">
@@ -662,7 +657,7 @@
     <!-- =====================================
     	==== Start library -->
 
-    <section class="services section-padding pb-70" data-scroll-index="3">
+    <section class="library section-padding pb-70" data-scroll-index="3">
         <div class="container">
             <div class="row">
                 <div class="section-head col-sm-12">
@@ -916,6 +911,55 @@
     <!-- End Team ====
         ======================================= -->
 
+
+		<!-- =====================================
+        ==== Start Contact -->
+    <section class="contact" data-scroll-index="6">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 map">
+                    <div id="ieatmaps"></div>
+                </div>
+                <div class="col-lg-6 contact-form">
+                    <form class="form" id="contact-form" method="post" action="https://formspree.io/hello@whiteblock.io">
+                        <div class="messages"></div>
+
+                        <div class="controls">
+                            <div class="row">
+                                <div class="section-head col-sm-12">
+                                    <h4> <span>Contact</span><br> Whiteblock
+                                    </h4> <br> <br>
+                                    <h5> hello@whiteblock.io </h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="submit"><span>Send Message</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact ====
+    ======================================= -->
+
+
     <!-- =====================================
     	==== Start Footer -->
     <footer class="text-center bg-img" data-overlay-dark="7" data-background="img/mountains.jpg">
@@ -938,9 +982,6 @@
     </footer>
     <!-- End Footer ====
     	======================================= -->
-
-
-
 
 
     <!-- jQuery -->
