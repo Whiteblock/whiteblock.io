@@ -531,29 +531,45 @@ span, a, a:hover {
 .header .email-subscribe .email-subscribe-form input[type='submit']:hover span {
   color: #39CCCC;
 }
+.header .email-subscribe .email-subscribe-form #subscribe-result {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -135px;
+    background-color: #005c99;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 150px;
+    font-size: 17px;
+}
+.header .email-subscribe .email-subscribe-form #subscribe-result.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 
-.slider .arrow, .slider-fade .arrow {
-  display: none !important;
+@-webkit-keyframes fadein {
+    from {bottom: 50px; opacity: 0;}
+    to {bottom: 150px; opacity: 1;}
 }
-.slider .owl-item, .slider-fade .owl-item {
-  height: 100vh;
-  position: relative;
+
+@keyframes fadein {
+    from {bottom: 50px; opacity: 0;}
+    to {bottom: 150px; opacity: 1;}
 }
-.slider .item, .slider-fade .item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
+
+@-webkit-keyframes fadeout {
+    from {bottom: 150px; opacity: 1;}
+    to {bottom: 50px; opacity: 0;}
 }
-.slider .item .caption, .slider-fade .item .caption {
-  z-index: 9;
-}
-.slider .owl-theme .owl-dots, .slider-fade .owl-theme .owl-dots {
-  position: absolute;
-  bottom: 5vh;
-  width: 100%;
+
+@keyframes fadeout {
+    from {bottom: 150px; opacity: 1;}
+    to {bottom: 50px; opacity: 0;}
 }
 
 #particles-js {
