@@ -2,7 +2,6 @@
 * Whiteblock LLC
 **/
 $(function() {
-
     "use strict";
 
     var wind = $(window);
@@ -18,23 +17,17 @@ $(function() {
       topOffset: -80            // offste (in px) for fixed top navigation
     });
 
-
-
     // navbar scrolling background
     wind.on("scroll",function () {
-
         var bodyScroll = wind.scrollTop(),
             navbar = $(".navbar"),
             navbloglogo = $(".blog-nav .logo> img"),
             logo = $(".navbar .logo> img");
 
         if(bodyScroll > 100){
-
             navbar.addClass("nav-scroll");
             logo.attr('src', 'img/whiteblock-logo-dark.png');
-
         }else{
-
             navbar.removeClass("nav-scroll");
             logo.attr('src', 'img/whiteblock-logo-light.png');
             navbloglogo.attr('src', 'img/whiteblock-logo-dark.png');
@@ -46,20 +39,15 @@ $(function() {
         $(".navbar-collapse").removeClass("show");
     });
 
-
-
     // sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function(indx){
-
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
 
-
     // === owl-carousel === //
-
     // Testimonials owlCarousel
     $('.testimonails .owl-carousel').owlCarousel({
         items:1,
@@ -112,20 +100,6 @@ $(function() {
         }
     });
 
-
-    // magnificPopup
-    $('.gallery').magnificPopup({
-        delegate: '.popimg',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-
-    // YouTubePopUp
-    $("a.vid").YouTubePopUp();
-
-
     // Services Tabs
     $(".tabs-icon").on("click", ".item", function(){
 
@@ -137,7 +111,6 @@ $(function() {
 
     });
 
-
     // Map Show
     $(".info").on("click", ".icon-toggle", function(){
 
@@ -145,23 +118,17 @@ $(function() {
         $(".map").toggleClass("o-hidden");
 
     });
-
-
 });
 
-
 // === window When Loading === //
-
 $(window).on("load",function (){
 
     var wind = $(window);
-
     // Preloader
     $(".loading-logo").fadeOut(500);
 
     // stellar
     wind.stellar();
-
 
     // isotope
     $('.gallery').isotope({
@@ -175,19 +142,13 @@ $(window).on("load",function (){
 
     // filter items on button click
     $('.filtering').on( 'click', 'span', function() {
-
         var filterValue = $(this).attr('data-filter');
-
         $gallery.isotope({ filter: filterValue });
-
     });
 
     $('.filtering').on( 'click', 'span', function() {
-
         $(this).addClass('active').siblings().removeClass('active');
-
     });
-
 
     // contact form validator
     $('#contact-form').validator();
@@ -276,9 +237,7 @@ $(window).on("load",function (){
 
 // Slider
 $(document).ready(function() {
-
     var owl = $('.header .owl-carousel');
-
 
     // Slider owlCarousel
     $('.slider .owl-carousel').owlCarousel({
@@ -310,5 +269,126 @@ $(document).ready(function() {
         $('.owl-item').not('.cloned').eq(item).find('p').addClass('animated fadeInUp');
         $('.owl-item').not('.cloned').eq(item).find('.butn').addClass('animated zoomIn');
     });
-
 });
+
+/* The MIT License (MIT)
+*
+Copyright (c) 2015, Vincent Garreau */
+particlesJS('particles-js',
+  {
+    "particles": {
+      "number": {
+        "value": 140,
+        "density": {
+          "enable": false,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#888"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#888"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 3,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 200,
+        "color": "#888",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
+);
