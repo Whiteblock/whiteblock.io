@@ -33,18 +33,23 @@ ExpiresDefault "access 1 month"
     Header set Connection keep-alive
     <filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
         Header set Cache-Control "max-age=2592000, public"
+        Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
     </filesmatch>
     <filesmatch "\.(jpg|jpeg|png)$">
         Header set Cache-Control "max-age=1209600, public"
+        Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
     </filesmatch>
     # css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
     <filesmatch "\.(css)$">
         Header set Cache-Control "max-age=31536000, private"
+        Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
     </filesmatch>
     <filesmatch "\.(js)$">
         Header set Cache-Control "max-age=1209600, private"
+        Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
     </filesmatch>
     <filesMatch "\.(x?html?|php)$">
         Header set Cache-Control "max-age=600, private, must-revalidate"
-      </filesMatch>
+        Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
+    </filesMatch>
 </IfModule>
