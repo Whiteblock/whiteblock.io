@@ -167,7 +167,6 @@ span, a, a:hover {
   font-weight: 50;
   letter-spacing: 10px;
   text-transform: lowercase;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1251,7 +1250,7 @@ span, a, a:hover {
   border-radius: 5px;
 }
 .contact .contact-form textarea {
-  height: 160px
+  height: 160px;
   max-height: 160px;
   max-width: 100%;
 }
