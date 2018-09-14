@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="whiteblock, blockchain testing platform, blockchain testing, dapp testing" />
+    <meta name="description" content="Whiteblock is a blockchain testing company based in Los Angeles. The Whiteblock platform allows users to quickly test the performance of blockchain protocols and dapps." />
+    <meta name="author" content="Whiteblock" />
+
+    <!-- Title  -->
+    <title>Whiteblock Livestream</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/whiteblock-favicon.jpg" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="../css/style.min.css" />
+
+		<style>
+		.header .livestream-subscribe h4 {
+			font-size: 25px;
+			font-weight: 200;
+		}
+		.header .livestream-subscribe {
+			padding: 20px 10px 0px 10px;
+		}
+		@media only screen and (min-width: 1200px) {
+			.header .livestream-subscribe {
+				padding: 20px 50px 0px 0px;
+			}
+		}
+		.header .livestream-subscribe .livestream-subscribe-form input[type='email'],
+		.header .livestream-subscribe .livestream-subscribe-form textarea {
+			width: 100%;
+			padding: 10px;
+			border: 0;
+			background: #f7f7f7;
+			border-radius: 3px;
+			margin-top: 7px;
+			margin-right: -25px;
+		}
+		.header .livestream-subscribe .livestream-subscribe-form textarea {
+			height: 155px;
+			max-height: 155px;
+			max-width: 100%;
+		}
+		.header .livestream-subscribe .livestream-subscribe-form input[type='submit'] {
+			background: #F65620;
+			border: 1px solid #F65620;
+			border-radius: 3px;
+			color: #fff;
+			padding: 10px 20px;
+			font-weight: 700;
+			font-size: 15px;
+			cursor: pointer;
+			position: relative;
+			margin-top: 4px;
+			margin-right: 10px;
+		}
+		.header .livestream-subscribe .livestream-subscribe-form #subscribe-result {
+				visibility: hidden;
+				min-width: 250px;
+				margin-left: -135px;
+				background-color: #005c99;
+				color: #fff;
+				text-align: center;
+				border-radius: 2px;
+				padding: 16px;
+				position: fixed;
+				z-index: 1;
+				left: 50%;
+				bottom: 150px;
+				font-size: 17px;
+		}
+		.header .livestream-subscribe .livestream-subscribe-form #subscribe-result.show {
+				visibility: visible;
+				-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+				animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		}
+		.header .livestream-subscribe .work-btn button[type='button']{
+		  background: #39CCCC;
+		  border: 1px solid #39CCCC;
+		  color: #fff;
+		  padding: 10px 10px;
+		  margin: 4px 0px 0px 46px;
+		  font-weight: 600;
+		  cursor: pointer;
+		  position: relative;
+		}
+		.header .livestream-subscribe .work-btn button[type='button']:after {
+		  content: '';
+		  width: 0;
+		  height: 100%;
+		  position: absolute;
+		  bottom: 0;
+		  left: 100%;
+		  z-index: 1;
+		  background-color: #fff;
+		  -webkit-transition: all 0.3s ease;
+		  transition: all 0.3s ease;
+		}
+		.header .livestream-subscribe .work-btn button[type='button'] span {
+		  position: relative;
+		  z-index: 2;
+		}
+		.header .livestream-subscribe .work-btn button[type='button']:hover:after {
+		  width: 100%;
+		  left: 0;
+		  -webkit-transition: width 0.3s ease;
+		  transition: width 0.3s ease;
+		}
+		.header .livestream-subscribe .work-btn button[type='button']:hover span {
+		  color: #39CCCC;
+		}
+
+		.social a {
+		  color: #777;
+		  font-size: 18px;
+		  margin: 15px 10px;
+		}
+		</style>
+</head>
+
+<body>
+    <!-- ==== Start Loading -->
+		<div class="loading-logo">
+			<div class="middle"> </div>
+		</div>
+    <!-- End Loading ==== -->
+
+		<!-- ==== Contact form Pop up -->
+		<section class="contact">
+			<div class="container-fluid">
+      	<div class="row">
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content contact-form">
+								<div class="controls">
+									<form class="form" id="contact-form" method="post" action="https://formspree.io/hello@whiteblock.io">
+										<div class="section-head modal-header">
+											<h4 class="modal-title">Contact Us</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<div class="modal-body">
+											<div class="col-12">
+			                    <div class="form-group">
+			                        <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+			                    </div>
+			                </div>
+			                <div class="col-12">
+			                    <div class="form-group">
+			                        <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+			                    </div>
+			                </div>
+			                <div class="col-md-12">
+			                    <div class="form-group">
+			                        <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
+			                    </div>
+			                </div>
+										</div>
+										<div class="col-md-12 text-center">
+												<button type="submit"><span>Send Message</span></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact form Pop up ==== -->
+
+    <!-- ==== Start Header -->
+    <header class="header valign bg-img" data-scroll-index="0" data-overlay-dark="4" data-background="../img/mountains.jpg">
+        <!-- particles -->
+        <div id="particles-js"></div>
+
+        <div class="container">
+            <div class="row">
+							<div class="full-width caption">
+								<a class="logo" href="#" data-scroll-nav="0">
+										<img style="margin-left: 13px;" src="../img/whiteblock-logo-light.png" alt="whiteblock blockchain testing logo">
+								</a>
+								<div class="social">
+			              <a href="https://twitter.com/whiteblockio"><i class="icofont icofont-social-twitter"></i></a>
+			              <a href="https://t.me/whiteblock_io"><i class="icofont icofont-social-telegram"></i></a>
+			              <a href="https://www.linkedin.com/company/whiteblock/"><i class="icofont icofont-brand-linkedin"></i></a>
+			          </div>
+							</div>
+                <div class="full-width caption mt-50">
+									<div class="container">
+					            <div class="row">
+					              <div class="col-lg-8">
+					                  <div class="mission mb-30">
+					                      <div class="section-head mb-30">
+					                        <h4> Livestream EOS benchmark testing </h4>
+					                      </div>
+					                      <p>Whiteblock Inc., the world’s first blockchain testing
+																	company, announced they have submitted a response to deliver the industry’s first
+																	independent benchmark testing of the EOS blockchain. The performance benchmarking project
+																	is described on <a href="https://explorer.bounties.network/bounty/1009"> Bounties.network site </a>
+					                      </p> <br>
+
+																<!-- Begin MailChimp Signup Form -->
+																<div class="livestream-subscribe full-width">
+																	<h6> Subscribe to the livestream invitation list in November</h6> <br>
+																	<div class="livestream-subscribe-form">
+																			<form action="https://whiteblock.us17.list-manage.com/subscribe/post-json?u=a27d6187752a19dbe98b0f944&amp;id=16fb002c89" method="get" id="subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+																					<div class="row">
+																						<div class="col-12 col-md-7">
+																							<input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+																						</div>
+																						<div class="col-12 col-md-2">
+																					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+																					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a27d6187752a19dbe98b0f944_16fb002c89" tabindex="-1" value=""></div>
+																					    <div class="sub-btn"><input type="submit" value="Subscribe" name="subscribe" onclick="toaster()"></div>
+																						</div>
+																						<div class="col-12 col-md-3">
+																							<div class="work-btn">
+																								<button type="button" data-toggle="modal" data-target="#myModal">
+																									<span>Contact Us</span>
+																								</button>
+																							</div>
+																						</div>
+																					</div>
+																			</form>
+																			<div class="" id="subscribe-result"></div>
+																	</div>
+																</div>
+																<!--End mc_embed_signup-->
+					                  </div>
+					              </div>
+												<div class="col-lg-4">
+													<img style="max-width: 70%; height: auto; margin-left: 70px;" src="../img/services/infrastructure-as-a-service.png" alt="Infrastructure as a Service for Whiteblock Blockchain Testing Platform">
+												</div>
+					            </div>
+					        </div>
+                </div>
+						</div>
+        </div>
+    </header>
+    <!-- End Header ==== -->
+
+    <!-- ==== Start Platforms
+    <div class="clients section-padding pt-80 pb-20 bg-gray" data-scroll-index="1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-head platform-head col-sm-12">
+                    <h4><span>Partnership</span><br> </h4>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                    <div class="brand">
+											<a href="https://github.com/Whiteblock/ETH">
+                        <img src="img/platform/ethereum.png" alt="Ethereum Blockchain Logo">
+											</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-4">
+                    <div class="brand">
+											<a href="https://github.com/Whiteblock/eos">
+                        <img src="img/platform/eos.png" alt="EOS Blockchain Logo">
+											</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Platforms ==== -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery-3.0.0.min.js"></script>
+    <script src="../js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="../js/scrollIt.min.js"></script>
+
+    <!-- jquery.waypoints.min -->
+    <script src="../js/jquery.waypoints.min.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="../js/jquery.counterup.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="../js/isotope.pkgd.min.js"></script>
+
+    <!-- particles.min js -->
+    <script src="../js/particles.min.js"></script>
+
+		<!-- app js -->
+    <script src="../js/app.min.js"></script>
+
+    <!-- validator js -->
+    <script src="../js/validator.min.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../js/scripts.min.js"></script>
+
+</body>
+</html>
