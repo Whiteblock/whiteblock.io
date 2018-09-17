@@ -26,16 +26,16 @@
     <link rel="stylesheet" href="../css/style.min.css" />
 
 		<style>
-		.header .livestream-subscribe h4 {
+		.header .email-subscribe h4 {
 			font-size: 25px;
 			font-weight: 200;
 		}
-		.header .livestream-subscribe {
+		.header .email-subscribe {
 			padding: 20px 10px 0px 0px;
       margin-top: 30px;
 		}
 		@media only screen and (min-width: 1200px) {
-			.header .livestream-subscribe {
+			.header .email-subscribe {
 				padding: 20px 50px 0px 0px;
 			}
 		}
@@ -44,8 +44,8 @@
 				display: none;
 			}
 		}
-		.header .livestream-subscribe .livestream-subscribe-form input[type='email'],
-		.header .livestream-subscribe .livestream-subscribe-form textarea {
+		.header .email-subscribe .email-subscribe-form input[type='email'],
+		.header .email-subscribe .email-subscribe-form textarea {
 			width: 100%;
 			padding: 10px;
 			border: 0;
@@ -54,12 +54,12 @@
 			margin-top: 7px;
 			margin-right: -25px;
 		}
-		.header .livestream-subscribe .livestream-subscribe-form textarea {
+		.header .email-subscribe .email-subscribe-form textarea {
 			height: 155px;
 			max-height: 155px;
 			max-width: 100%;
 		}
-		.header .livestream-subscribe .livestream-subscribe-form input[type='submit'] {
+		.header .email-subscribe .email-subscribe-form input[type='submit'] {
 			background: #F65620;
 			border: 1px solid #F65620;
 			border-radius: 3px;
@@ -72,7 +72,7 @@
 			margin-top: 4px;
 			margin-right: 10px;
 		}
-		.header .livestream-subscribe .livestream-subscribe-form #subscribe-result {
+		.header .email-subscribe .email-subscribe-form #subscribe-result {
 				visibility: hidden;
 				min-width: 250px;
 				margin-left: -135px;
@@ -87,12 +87,12 @@
 				bottom: 150px;
 				font-size: 17px;
 		}
-		.header .livestream-subscribe .livestream-subscribe-form #subscribe-result.show {
+		.header .email-subscribe .email-subscribe-form #subscribe-result.show {
 				visibility: visible;
 				-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
 				animation: fadein 0.5s, fadeout 0.5s 2.5s;
 		}
-		.header .livestream-subscribe .work-btn button[type='button']{
+		.header .email-subscribe .work-btn button[type='button']{
 		  background: #39CCCC;
 		  border: 1px solid #39CCCC;
 		  color: #fff;
@@ -102,7 +102,7 @@
 		  cursor: pointer;
 		  position: relative;
 		}
-		.header .livestream-subscribe .work-btn button[type='button']:after {
+		.header .email-subscribe .work-btn button[type='button']:after {
 		  content: '';
 		  width: 0;
 		  height: 100%;
@@ -114,17 +114,17 @@
 		  -webkit-transition: all 0.3s ease;
 		  transition: all 0.3s ease;
 		}
-		.header .livestream-subscribe .work-btn button[type='button'] span {
+		.header .email-subscribe .work-btn button[type='button'] span {
 		  position: relative;
 		  z-index: 2;
 		}
-		.header .livestream-subscribe .work-btn button[type='button']:hover:after {
+		.header .email-subscribe .work-btn button[type='button']:hover:after {
 		  width: 100%;
 		  left: 0;
 		  -webkit-transition: width 0.3s ease;
 		  transition: width 0.3s ease;
 		}
-		.header .livestream-subscribe .work-btn button[type='button']:hover span {
+		.header .email-subscribe .work-btn button[type='button']:hover span {
 		  color: #39CCCC;
 		}
 
@@ -214,10 +214,10 @@
 					                      </div>
                                 <h6> The Whiteblock team will livestream EOS benchmark testing in November.</h6>
 																<!-- Begin MailChimp Signup Form -->
-																<div class="livestream-subscribe full-width">
+																<div class="email-subscribe full-width">
 																	<h6> Subscribe to the livestream invitation list:</h6> <br>
-																	<div class="livestream-subscribe-form">
-																			<form action="https://whiteblock.us17.list-manage.com/subscribe/post?u=a27d6187752a19dbe98b0f944&amp;id=68c58d55ef" method="get" id="subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+																	<div class="email-subscribe-form">
+																			<form action="https://whiteblock.us17.list-manage.com/subscribe/post-json?u=a27d6187752a19dbe98b0f944&amp;id=68c58d55ef" method="get" id="subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 																					<div class="row">
 																						<div class="col-12 col-md-7">
 																							<input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
