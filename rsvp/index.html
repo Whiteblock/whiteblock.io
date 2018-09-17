@@ -31,11 +31,17 @@
 			font-weight: 200;
 		}
 		.header .livestream-subscribe {
-			padding: 20px 10px 0px 10px;
+			padding: 20px 10px 0px 0px;
+      margin-top: 30px;
 		}
 		@media only screen and (min-width: 1200px) {
 			.header .livestream-subscribe {
 				padding: 20px 50px 0px 0px;
+			}
+		}
+    @media only screen and (max-width: 991px) {
+			.header .caption .eos-illus img{
+				display: none;
 			}
 		}
 		.header .livestream-subscribe .livestream-subscribe-form input[type='email'],
@@ -91,7 +97,7 @@
 		  border: 1px solid #39CCCC;
 		  color: #fff;
 		  padding: 10px 10px;
-		  margin: 4px 0px 0px 46px;
+		  margin: 4px 0px 0px 0px;
 		  font-weight: 600;
 		  cursor: pointer;
 		  position: relative;
@@ -189,7 +195,7 @@
         <div class="container">
             <div class="row">
 							<div class="full-width caption">
-								<a class="logo" href="#" data-scroll-nav="0">
+								<a class="logo" href="https://whiteblock.io/">
 										<img style="margin-left: 13px;" src="../img/whiteblock-logo-light.png" alt="whiteblock blockchain testing logo">
 								</a>
 								<div class="social">
@@ -206,15 +212,11 @@
 					                      <div class="section-head mb-30">
 					                        <h4> Livestream EOS benchmark testing </h4>
 					                      </div>
-					                      <p>Whiteblock Inc., the world’s first blockchain testing
-																	company, announced they have submitted a response to deliver the industry’s first
-																	independent benchmark testing of the EOS blockchain. The performance benchmarking project
-																	is described on <a href="https://explorer.bounties.network/bounty/1009"> Bounties.network site </a>
-					                      </p> <br>
+                                <h6> The Whiteblock team will livestream EOS benchmark testing in November.</h6>
 
 																<!-- Begin MailChimp Signup Form -->
 																<div class="livestream-subscribe full-width">
-																	<h6> Subscribe to the livestream invitation list in November</h6> <br>
+																	<h6> Subscribe to the livestream invitation list:</h6> <br>
 																	<div class="livestream-subscribe-form">
 																			<form action="https://whiteblock.us17.list-manage.com/subscribe/post-json?u=a27d6187752a19dbe98b0f944&amp;id=16fb002c89" method="get" id="subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 																					<div class="row">
@@ -239,9 +241,10 @@
 																	</div>
 																</div>
 																<!--End mc_embed_signup-->
+                                <p style="margin-top: 45px;">Whiteblock Inc. provides the world’s first scalable test system for blockchain and enterprise DLT developers. Whiteblock’s Blockchain Testing as a Service (BTaaS) measures and validates key performance benchmarks, such as transactions per second and consensus over a variety of networks. Developers can automate transactions, test fault tolerance, dynamically add or remove nodes, and quickly provision a private testnet that simulates a live and dynamic global blockchain network.</p> <br>
 					                  </div>
 					              </div>
-												<div class="col-lg-4">
+												<div class="eos-illus col-lg-4">
 													<img style="max-width: 70%; height: auto; margin-left: 70px;" src="../img/services/infrastructure-as-a-service.png" alt="Infrastructure as a Service for Whiteblock Blockchain Testing Platform">
 												</div>
 					            </div>
