@@ -127,9 +127,6 @@ $(window).on("load",function (){
     // Preloader
     $(".loading-logo").fadeOut(500);
 
-    // stellar
-    wind.stellar();
-
     // isotope
     $('.gallery').isotope({
       // options
