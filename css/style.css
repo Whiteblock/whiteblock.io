@@ -163,7 +163,7 @@ span, a, a:hover {
 .cd-headline.clip span {
   display: inline-block;
   padding: .2em 0;
-  font-size: 7.4rem;
+  font-size: 4.5rem;
   font-weight: 50;
   letter-spacing: 10px;
   text-transform: lowercase;
@@ -171,13 +171,13 @@ span, a, a:hover {
 
 @media only screen and (min-width: 768px) {
   .cd-headline {
-    font-size: 4.4rem;
+    font-size: 3rem;
     font-weight: 300;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-headline {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 .cd-words-wrapper {
@@ -737,8 +737,8 @@ span, a, a:hover {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   margin: auto;
 }
 .team .titem .team-img:hover img {
@@ -1361,7 +1361,7 @@ footer p {
   }
 
   .header .caption .blc {
-	   font-size: 85px;
+	   font-size: 65px;
   }
   .header .email-subscribe {
     padding: 10px 100px 0px 70px;
@@ -1461,7 +1461,7 @@ footer p {
   }
 
   .header .caption .blc {
-	   font-size: 45px;
+	   font-size: 40px;
   }
 
   .header .email-subscribe {
