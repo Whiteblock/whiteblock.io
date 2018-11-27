@@ -54,7 +54,7 @@ body {
   overflow-x: hidden !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, , h5, h6 {
   font-family: 'Segoeuil', sans-serif;
 }
 
@@ -1192,14 +1192,7 @@ span, a, a:hover {
 /* ----------------------------------------------------------------
      [ 15 Start Contact ]
 -----------------------------------------------------------------*/
-.contact .map {
-  padding: 0;
-  position: relative;
-  z-index: 4;
-}
-.contact #ieatmaps {
-  height: 100%;
-}
+
 .information {
   padding: 80px 0;
   color: #fff;
