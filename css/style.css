@@ -661,8 +661,26 @@ span, a, a:hover {
   margin-bottom: 15px;
   font-size: 20px;
 }
+.library .item h6:hover {
+  color: #38cbcc; 
+}
 .library .item p {
   font-size: 15px;
+}
+
+.imgLogoSys {
+  width:16%;
+  padding-bottom: 19px;
+}
+
+.imgLogoALT {
+  width:10%;
+  padding-bottom: 19px;
+}
+
+.imgLogoWB {
+  width:15%;
+  padding-bottom: 19px;
 }
 /* ----------------------------------------------------------------
      [ End Library ]
